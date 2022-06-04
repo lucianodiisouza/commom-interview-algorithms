@@ -58,7 +58,7 @@ function reverseC(str) {
  * just returning it
  */
 
-function reverseC(str) {
+function reverseD(str) {
   return str.split('').reduce((rev, char) => char + rev, '')
 }
 
