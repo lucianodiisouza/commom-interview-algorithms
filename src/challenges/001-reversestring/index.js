@@ -49,6 +49,17 @@ function reverseC(str) {
   return reverse
 }
 
-console.log(reverseC('luana'))
+/**
+ * turn string into an array
+ * use reduce method, passing a fn as callback, and
+ * initial value after it.
+ * inside the callback function, we will receive a temporary variable
+ * called reversed, and the iterated char,
+ * just returning it
+ */
+
+function reverseC(str) {
+  return str.split('').reduce((rev, char) => char + rev, '')
+}
 
 module.exports = reverse
