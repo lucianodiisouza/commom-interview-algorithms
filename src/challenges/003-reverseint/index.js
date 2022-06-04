@@ -8,6 +8,13 @@
 //   reverseInt(-15) === -51
 //   reverseInt(-90) === -9
 
+/***
+ * convert the number in string > array > revert it and join it again
+ * check the sign of the number (if is positive or negative // 0)
+ * return the reversed number, and his sign, following the testcases above
+ *
+ */
+
 function reverseInt(n) {
   const reversedNumber = n.toString().split('').reverse().join('')
 
