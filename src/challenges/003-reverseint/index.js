@@ -23,4 +23,11 @@ function reverseInt(n) {
   return parseInt(reversedNumber) * sign
 }
 
+// expert solution#1 (looks much similar for my solution :D )
+function reverseIntB(n) {
+  const reversed = n.toString().split('').reverse().join('')
+
+  return parseInt(reversed) * Math.sign(n)
+}
+
 module.exports = reverseInt
