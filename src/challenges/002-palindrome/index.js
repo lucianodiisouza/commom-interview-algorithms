@@ -12,13 +12,26 @@
  *  step 2 - reverse it
  *  step 3 - join all array items
  *  step 4 - return a boolean value
- * 
+ *
  */
 function palindrome(str) {
   const reversed = str.split('').reverse().join('')
   return reversed === str
 }
 
+// expert solution#1
+/**
+ * here we will convert the str onto an array
+ * and in the array, we will use the every method, to
+ * iterat inside the array, returning if the current char
+ * iterated is equal to the inverted position item (str.length - index -1)
+ * the index - 1, will be recalculated on every iteration
+ */
 
+function palindromeB(str) {
+  return str.split('').every((char, index) => {
+    return char === str[str.length - index - 1]
+  })
+}
 
 module.exports = palindrome
