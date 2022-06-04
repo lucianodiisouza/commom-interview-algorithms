@@ -22,4 +22,9 @@ function reverse(str) {
   return arrStr.join('')
 }
 
+// expert solution #1
+function reverseB(str) {
+  return str.split('').reverse().join('')
+}
+
 module.exports = reverse
