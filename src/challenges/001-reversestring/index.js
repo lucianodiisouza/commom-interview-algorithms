@@ -22,9 +22,33 @@ function reverse(str) {
   return arrStr.join('')
 }
 
-// expert solution #1
+// expert solution #1 - cleaning up code
 function reverseB(str) {
   return str.split('').reverse().join('')
 }
+
+// expert solution #2 - without use a reverse method
+// create a string called reverse
+// for each characted existant in this string
+// |> take the char and add it to start of reversed var
+// return the reversed variable
+
+function reverseC(str) {
+  let reverse = ''
+
+  //   with the old for syntax
+  //   for (let i = 0; i < str.length; i++) {
+  //     reverse = str[i] + reverse
+  //   }
+
+  //   with the new es5 syntax
+  for (char of str) {
+    reverse = char + reverse
+  }
+
+  return reverse
+}
+
+console.log(reverseC('luana'))
 
 module.exports = reverse
