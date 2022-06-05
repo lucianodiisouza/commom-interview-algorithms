@@ -30,4 +30,11 @@ function fizzBuzz(n) {
   }
 }
 
+// experts solution#1
+/***
+ * looking for an expert solution, hes using the same approach,
+ * i think i can interpolate some nested ternary operation here
+ * but, maybe we lost the readability of the code.
+ */
+
 module.exports = fizzBuzz
